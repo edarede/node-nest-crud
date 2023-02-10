@@ -1,0 +1,21 @@
+2023-02-10 16:10:08 - [I] Starting Nest application...
+2023-02-10 16:10:08 - [E] (node:8760) Warning: Accessing non-existent property 'count' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+2023-02-10 16:10:08 - [E] (node:8760) Warning: Accessing non-existent property 'findOne' of module exports inside circular dependency
+2023-02-10 16:10:08 - [E] (node:8760) Warning: Accessing non-existent property 'remove' of module exports inside circular dependency
+2023-02-10 16:10:08 - [E] (node:8760) Warning: Accessing non-existent property 'updateOne' of module exports inside circular dependency
+2023-02-10 16:10:08 - [I] MongooseModule dependencies initialized
+2023-02-10 16:10:08 - [I] AppModule dependencies initialized
+2023-02-10 16:10:08 - [I] MongooseCoreModule dependencies initialized
+2023-02-10 16:10:08 - [I] MongooseModule dependencies initialized
+2023-02-10 16:10:08 - [I] ProductModule dependencies initialized
+2023-02-10 16:10:08 - [I] AppController {/}:
+2023-02-10 16:10:08 - [I] Mapped {/, GET} route
+2023-02-10 16:10:08 - [I] ProductController {/product}:
+2023-02-10 16:10:08 - [I] Mapped {/create, POST} route
+2023-02-10 16:10:08 - [I] Mapped {/, GET} route
+2023-02-10 16:10:08 - [I] Mapped {/:productID, GET} route
+2023-02-10 16:10:08 - [I] Mapped {/delete, DELETE} route
+2023-02-10 16:10:08 - [I] Mapped {/update, PUT} route
+2023-02-10 16:10:08 - [I] Nest application successfully started
+2023-02-10 16:10:08 - [I] Server on port 3501

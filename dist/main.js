@@ -10,9 +10,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@nestjs/core");
 const app_module_1 = require("./app.module");
+const logger_service_1 = require("./services/logger.service");
 function bootstrap() {
     return __awaiter(this, void 0, void 0, function* () {
-        const app = yield core_1.NestFactory.create(app_module_1.AppModule);
+        const app = yield core_1.NestFactory.create(app_module_1.AppModule, {
+            logger: new logger_service_1.LoggerService()
+        });
         app.enableCors();
         yield app.listen(3501);
         console.log('Server on port', 3501);
