@@ -6,7 +6,7 @@ import { ProductModule } from './product/product.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/products-nest', {
+    MongooseModule.forRoot('mongodb://localhost/products-nest', { /* si no existe, mongoose crea la db */
       useNewUrlParser: true
     }),
     ProductModule

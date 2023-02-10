@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "46f9e04c-5991-4229-88af-8f80df802b74",
+		"name": "Nest-Crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4390485"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3501/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3501",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3501/product/63e68bc31e3b8b13e00b78d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3501",
+					"path": [
+						"product",
+						"63e68bc31e3b8b13e00b78d6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "con",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"marcelo\",\r\n    \"description\": \"agachate y c....\",\r\n    \"imageURL\": \"https://docs.nestjs.com/techniques/mongodb/9654\",\r\n    \"price\": 10.12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3501/product/create?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3501",
+					"path": [
+						"product",
+						"create"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "con",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Lionel\",\r\n    \"description\": \"Andres...\",\r\n    \"imageURL\": \"https://www.youtube.com/watch?v=jEKsD5f3Bqc\",\r\n    \"price\": 5.698\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3501/product/update?productID=63e68d000c87de49c866f443",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3501",
+					"path": [
+						"product",
+						"update"
+					],
+					"query": [
+						{
+							"key": "productID",
+							"value": "63e68d000c87de49c866f443"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "con",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"pablo\",\r\n    \"description\": \"agachate y c....\",\r\n    \"imageURL\": \"https://docs.nestjs.com/techniques/mongodb/9654\",\r\n    \"price\": 10.12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3501/product/delete?productID=63e68d000c87de49c866f443",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3501",
+					"path": [
+						"product",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "productID",
+							"value": "63e68d000c87de49c866f443"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
