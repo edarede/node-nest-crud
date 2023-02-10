@@ -27,6 +27,8 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<p>Origninal, en: https://www.youtube.com/watch?v=jEKsD5f3Bqc</p>
+</p>Nota: Debes tener instalado mongo  en tu PC.</p>
 
 ## Installation
 
@@ -58,6 +60,22 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
+```
+## Subir mi codigo a Rama existente
+
+```bash
+# inicio
+$ git init
+# enlace con rama
+$ git remote add main https://github.com/edarede/node-nest-crud.git
+# a ver que onda
+$ git status
+# agrego los files
+$ git add .
+# comiteo
+$ git commit -m "inicio"
+# a pelase
+$ git push main
 ```
 
 ## Support
