@@ -1,0 +1,16 @@
+2023-02-10 16:10:08 - [I] Starting Nest application...
+2023-02-10 16:10:08 - [I] MongooseModule dependencies initialized
+2023-02-10 16:10:08 - [I] AppModule dependencies initialized
+2023-02-10 16:10:08 - [I] MongooseCoreModule dependencies initialized
+2023-02-10 16:10:08 - [I] MongooseModule dependencies initialized
+2023-02-10 16:10:08 - [I] ProductModule dependencies initialized
+2023-02-10 16:10:08 - [I] AppController {/}:
+2023-02-10 16:10:08 - [I] Mapped {/, GET} route
+2023-02-10 16:10:08 - [I] ProductController {/product}:
+2023-02-10 16:10:08 - [I] Mapped {/create, POST} route
+2023-02-10 16:10:08 - [I] Mapped {/, GET} route
+2023-02-10 16:10:08 - [I] Mapped {/:productID, GET} route
+2023-02-10 16:10:08 - [I] Mapped {/delete, DELETE} route
+2023-02-10 16:10:08 - [I] Mapped {/update, PUT} route
+2023-02-10 16:10:08 - [I] Nest application successfully started
+2023-02-10 16:10:08 - [I] Server on port 3501
